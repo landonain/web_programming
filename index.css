@@ -6,21 +6,24 @@
 #sddm li
 {	margin: 0;
 	padding: 0;
+	display: block;
 	list-style: none;
 	float: left;
-	font: bold 11px arial}
+	font: bold 14px arial}
 
 #sddm li a
 {	display: block;
 	margin: 0 1px 0 0;
 	padding: 4px 10px;
-	width: 60px;
-	background: #5970B2;
-	color: #FFF;
+	width: 90px;
+	background: #FFF;
+	color: black;
 	text-align: center;
 	text-decoration: none}
 
-#sddm li a:hover
+#sddms li a:hover
+{	background: #EAEBD8;}
+#sddms li a:hover
 {	background: #49A3FF}
 
 #sddm div
@@ -29,7 +32,7 @@
 	margin: 0;
 	padding: 0;
 	background: #EAEBD8;
-	border: 1px solid #5970B2}
+	border: 2px solid #5970B2}
 
 	#sddm div a
 	{	position: relative;
@@ -40,9 +43,9 @@
 		white-space: nowrap;
 		text-align: left;
 		text-decoration: none;
-		background: #EAEBD8;
-		color: #2875DE;
-		font: 11px arial}
+		background: #FFF;
+		color: black;
+		font: 14px arial}
 
 	#sddm div a:hover
 	{	background: #49A3FF;
