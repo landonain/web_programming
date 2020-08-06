@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>My Website Home Page</title>
+	<link rel = "stylesheet" type="text/css" href= "index.css" />
+	<script>
+	// Copyright 2006-2007 javascript-array.com
+
+	var timeout    = 1000;
+	var closetimer    = 0;
+	var ddmenuitem    = 0;
+
+	// open hidden layer
+	function mopen()
+	{    
+		// cancel close timer
+		mcancelclosetime();
+		// close old layer
+		mclose();
+		ddmenuitem = $(this).find('ul').eq(0).css('visibility', 'visible');
+	}
+	// close showed layer
+	function mclose()
+	{
+		if(ddmenuitem) ddmenuitem.css('visibility', 'hidden');
+	}
+
+	// go close timer
+	function mclosetime()
+	{
+		closetimer = window.setTimeout(mclose, timeout);
+	}
+
+	// cancel close timer
+	function mcancelclosetime()
+	{
+		if(closetimer)
+		{
+			window.clearTimeout(closetimer);
+			closetimer = null;
+		}
+	}
+
+	// close layer when click-out
+	
+	
+	$(document).ready(function()
+	{$('#sddm > li').bind('mouseover', mopen);
+     $('#sddm > li').bind('mouseout', mclosetime);
+	})
+	
+	document.onclick = mclose; 
+	</script>
+<body>
+  <ul id="sddm">
+		<li>
+			<a href="#">My Classes</a>
+				<div id="m1"
+					<a href="https://roneaglin.online/cop4813/">Web Programming</a>
+				</div>
+		</li>
+		<li>
+			<a href="#" >Assignments</a>
+				<div id="m2">
+					<a href="assign1.html">Assignment 1</a>
+					<a href="assign2.html">Assignment 2</a>
+				</div>
+		</li>
+		<li>
+			<a href="#">Programming</a>
+		</li>
+		<li>
+			<a href="#">Contact</a>
+		</li>
+	</ul>
+	<div style="clear:both"></div>
+</body>
+</html>
