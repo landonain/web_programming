@@ -6,6 +6,7 @@
 #sddm li
 {	margin: 0;
 	padding: 0;
+	display: block;
 	list-style: none;
 	float: left;
 	font: bold 14px arial}
@@ -25,7 +26,7 @@
 	color: #EAEBD8;}
 
 
-#sddm div
+#sddm li a ul li
 {	position: absolute;
 	visibility: hidden;
 	margin: 0;
@@ -33,7 +34,7 @@
 	background: #EAEBD8;
 	border: 2px solid #5970B2}
 
-	#sddm div a
+	#sddm li a ul li a
 	{	position: relative;
 		display: block;
 		margin: 0;
@@ -45,7 +46,7 @@
 		background: #FFF;
 		color: black;
 		font: 14px arial}
-
-	#sddm div a:hover
+	
+	#sddm li a ul li a:hover
 	{	background: #49A3FF;
 		color: #EAEBD8;}

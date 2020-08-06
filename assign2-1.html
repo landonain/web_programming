@@ -3,12 +3,11 @@
 <head>
 	<meta charset="utf-8"/>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <title>My Website Home Page</title>
-	<link rel = "stylesheet" type="text/css" href= "index.css" />
-	<script>
-	// Copyright 2006-2007 javascript-array.com
+    <title>Jquery menu example</title>
+	<link rel = "stylesheet" type="text/css" href= "jindex.css" />
+	<script type="text/javascript">
 
-	var timeout    = 1000;
+	var timeout    = 2000;
 	var closetimer    = 0;
 	var ddmenuitem    = 0;
 
@@ -48,8 +47,7 @@
 	
 	$(document).ready(function()
 	{$('#sddm > li').bind('mouseover', mopen);
-     $('#sddm > li').bind('mouseout', mclosetime);
-	})
+     $('#sddm > li').bind('mouseout', mclosetime);});
 	
 	document.onclick = mclose; 
 	</script>
@@ -57,16 +55,16 @@
   <ul id="sddm">
 		<li>
 			<a href="#">My Classes</a>
-				<div id="m1"
-					<a href="https://roneaglin.online/cop4813/">Web Programming</a>
-				</div>
+				<ul>
+					<li><a href="https://roneaglin.online/cop4813/">Web Programming</a></li>
+				</ul>
 		</li>
 		<li>
 			<a href="#" >Assignments</a>
-				<div id="m2">
-					<a href="assign1.html">Assignment 1</a>
-					<a href="assign2.html">Assignment 2</a>
-				</div>
+				<ul>
+					<li><a href="assign1.html">Assignment 1</a></li>
+					<li><a href="assign2.html">Assignment 2</a></li>
+				</ul>
 		</li>
 		<li>
 			<a href="#">Programming</a>
