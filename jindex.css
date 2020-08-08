@@ -1,5 +1,6 @@
 html{
-	background:#EAEBD8;
+	
+	background:#99CCFF;
 }
 #sddm
 {	
@@ -12,28 +13,28 @@ html{
 {	
 	margin: 0;
 	padding: 0;
-	background:white;	
+	
+	color: black;
 	display: block;
 	list-style: none;
 	float: left;
-	font: bold 14px arial;
-	width:25%
+	font: bold 25px arial;
+	width:25%;
+	
 }
 
 #sddm li a
 {	
 	display: block;
 	margin: 0 1px 0 0;
-	padding: 4px 10px;
 	color: black;
 	text-align: center;
 	text-decoration: none;
-	border: 1px solid #5970B2
 }
 
 #sddm li a:hover
 {	
-	background: #99CCFF;
+
 	color: white
 }
 
@@ -43,7 +44,7 @@ html{
 	position: absolute;
 	visibility: hidden;
 	margin: 0;
-	width: 50%;
+	width: 100%;
 	padding: 0;
 }
 
@@ -52,19 +53,16 @@ html{
 		position: relative;
 		display: block;
 		margin: 0;
+		padding: 10px 4px;
 		width: auto;
-		background:white;
 		white-space: nowrap;
-		text-align: left;
+		text-align: center;
 		text-decoration: none;
-		color: black;
-		font: 11px arial;
-		
+		font: 18px arial;
 	}
 	
 	#sddm ul li a:hover
 	{	
-		background: #99CCFF;
-		color: white;
-		
+
+		color: white;	
 	}
