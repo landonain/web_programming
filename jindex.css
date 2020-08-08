@@ -1,20 +1,19 @@
 html
 {
 	height: 100%;
-	background: linear-gradient(to top, #D4F7EC 0%, #448D76);
+	background: linear-gradient(to top, #448D76 0%, #D4F7EC);
 }
 #sddm
 {	
 	margin: 0;
 	padding: 0;
-	z-index: 30
+	z-index: 30;
 }
 
 #sddm li
 {	
 	margin: 0;
-	padding: 0;
-	text-shadow: 1px 1px 2px #2E2FE3;	
+	padding: 0;	
 	display: block;
 	list-style: none;
 	float: left;
@@ -26,17 +25,17 @@ html
 #sddm li a
 {	
 	display: block;
-	margin: 0 1px 0 0;
-	
-	color: #F68504;
+	margin: 0 1px 0 0;	
+	text-shadow: 1px 1px 2px #2E2FE3;
+	color: #090934;
 	text-align: center;
 	text-decoration: none;
 }
 
 #sddm li a:hover
 {	
-	text-shadow: 4px 4px 4px #2E2FE3; 
-	/*color: #CCF6E9;*/
+	text-shadow: 2px 2px 4px #2E2FE3; 
+	color: #FB8604;
 }
 
 
