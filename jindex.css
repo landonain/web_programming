@@ -1,7 +1,7 @@
 html
 {
 	height: 100%;
-	background: linear-gradient(to top, #F7E9D4  0%, #FB9902 100%);
+	background: linear-gradient(to top, #FB9902 0%, #0247FE 50%);
 }
 #sddm
 {	
@@ -26,7 +26,7 @@ html
 {	
 	display: block;
 	margin: 0 1px 0 0;	
-	text-shadow: 1px 1px 2px #1440B8;
+	text-shadow: 2px 2px 4px #091534;
 	color: #F7E9D4;
 	text-align: center;
 	text-decoration: none;
@@ -34,8 +34,8 @@ html
 
 #sddm li a:hover
 {	
-	text-shadow: 2px 2px 4px #1440B8; 
-	color: #0247FE;
+	text-shadow: 2px 2px 4px #091534; 
+	color: #FB9902;
 }
 
 
