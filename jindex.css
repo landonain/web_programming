@@ -14,7 +14,7 @@ html
 {	
 	margin: 0;
 	padding: 0;
-	text-shadow: 1px 1px 2px #2E2FE3;	
+	/* text-shadow: 1px 1px 2px #2E2FE3;	*/
 	display: block;
 	list-style: none;
 	float: left;
@@ -35,7 +35,7 @@ html
 
 #sddm li a:hover
 {	
-	text-shadow: 4px 4px 4px #2E2FE3;
+	/*text-shadow: 4px 4px 4px #2E2FE3; */
 	color: #CCF6E9;
 }
 
