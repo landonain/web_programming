@@ -1,7 +1,7 @@
 html
 {
 	height: 100%;
-	background: linear-gradient(to top, #FB9902 0%, #0247FE 50%);
+	background: #0247FE; /*linear-gradient(to top, #FB9902 0%, #0247FE 50%);*/
 }
 #sddm
 {	
