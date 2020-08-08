@@ -1,3 +1,6 @@
+html{
+	background:#EAEBD8;
+}
 #sddm
 {	
 	margin: 0;
@@ -9,7 +12,7 @@
 {	
 	margin: 0;
 	padding: 0;
-	background:#EAEBD8;	
+	background:white;	
 	display: block;
 	list-style: none;
 	float: left;
@@ -30,7 +33,7 @@
 
 #sddm li a:hover
 {	
-	background: black;
+	background: #99CCFF;
 	color: white
 }
 
@@ -40,7 +43,7 @@
 	position: absolute;
 	visibility: hidden;
 	margin: 0;
-	width: 98%;
+	width: 50%;
 	padding: 0;
 }
 
@@ -50,17 +53,18 @@
 		display: block;
 		margin: 0;
 		width: auto;
-		background:#EAEBD8;
+		background:white;
 		white-space: nowrap;
-		text-align: center;
+		text-align: left;
 		text-decoration: none;
 		color: black;
-		font: 14px arial;
-		border: 1px solid #5970B2
+		font: 11px arial;
+		
 	}
 	
 	#sddm ul li a:hover
 	{	
-		background: black;
+		background: #99CCFF;
 		color: white;
+		
 	}
