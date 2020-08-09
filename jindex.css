@@ -60,4 +60,50 @@ html
 		text-decoration: none;
 		font: 18.5px arial;
 	}
-	
+#contact {
+	display: block;
+	margin: 0 10px 0 0;	
+	color: black;
+	text-align: center;
+	text-decoration: none;
+}
+#contact a{	
+	margin: 0;
+	padding: 0;	
+	display: block;
+	list-style: none;
+	padding: 10px 0px;
+	float: left;
+	text-shadow: 0.5px 0.5px 0.5px #091534;
+	color: black;
+	font: bold 25px arial;
+	width:33.3%;
+	text-align: center;
+	text-decoration: none;
+}
+#contact h3{	
+	margin: 0;
+	padding: 0;	
+	display: block;
+	list-style: none;
+	padding: 10px;
+	float: left;
+
+	color: black;
+
+	width:100%;
+	text-align: center;
+
+}
+#contact img
+{	
+	float: left;
+    width:  33.3%;
+    height: 600px;
+    object-fit: cover;
+}
+#contact a:hover
+{	
+	text-shadow: 2px 2px 4px #1440B8; 
+	color: #0247FE;
+}
