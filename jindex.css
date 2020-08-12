@@ -98,7 +98,7 @@ html
 #contact img
 {	
 	float: left;
-    width:  33.3%;
+    width:  25%;
     height: 600px;
     object-fit: cover;
 }
@@ -106,4 +106,11 @@ html
 {	
 	text-shadow: 2px 2px 4px #1440B8; 
 	color: #0247FE;
+}
+#assign3 
+{
+	background-image: url('back (2).jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;  
+	background-size: cover;
 }
