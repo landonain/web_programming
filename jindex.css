@@ -63,7 +63,7 @@ html
 #contact {
 	display: block;
 	margin: 0 10px 0 0;	
-	color: black;
+
 	text-align: center;
 	text-decoration: none;
 }
@@ -89,7 +89,7 @@ html
 	padding: 10px;
 	float: left;
 
-	color: #1440B8;
+	color: black;
 
 	width:100%;
 	text-align: center;
