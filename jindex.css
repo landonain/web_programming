@@ -3,6 +3,10 @@ html
 	height: 100%;
 	/*background: linear-gradient(to top, #FB9902 0%, #0247FE 50%);*/
 }
+body
+{
+	overflow-x: hidden;
+}	
 #sddm
 {	
 	margin: 0;
@@ -17,16 +21,26 @@ html
 	display: block;
 	list-style: none;
 	float: left;
-	font: bold 25px arial;
+	font: bold 30px arial;
 	width:25%;
 	
+}
+.footer
+{
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+
+   color: black;
+   text-align: center;
 }
 
 #sddm li a
 {	
 	display: block;
 	margin: 0 1px 0 0;	
-	text-shadow: 0.5px 0.5px 0.5px #091534;
+
 	color: #1440B8;
 	text-align: center;
 	text-decoration: none;
