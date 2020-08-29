@@ -1,10 +1,13 @@
 html
 {
 	height: 100%;
-	/*background: linear-gradient(to top, #FB9902 0%, #0247FE 50%);*/
 }
 body
 {
+	background-image: url('logo.jpg');
+	  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
 	overflow-x: hidden;
 }	
 #sddm
@@ -14,15 +17,24 @@ body
 	z-index: 30;
 }
 
+#logo{ 
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width:100%;
+	
+
+}
 #sddm li
 {	
 	margin: 0;
 	padding: 0;	
 	display: block;
+	box-sizing: border-box;
 	list-style: none;
 	float: left;
-	font: bold 30px arial;
-	width:25%;
+	font: bold 1em arial;
+	width: 25%;
 	
 }
 .footer
@@ -31,27 +43,26 @@ body
    left: 0;
    bottom: 0;
    width: 100%;
-
    color: black;
    text-align: center;
 }
-
 #sddm li a
 {	
 	display: block;
-	margin: 0 1px 0 0;	
-
-	color: #1440B8;
+	margin: 0 1px 0 0;
+	padding: 10px 4px;
+	color: black;
 	text-align: center;
 	text-decoration: none;
 }
 
-#sddm li a:hover
-{	
-	text-shadow: 2px 2px 4px #1440B8; 
-	color: #0247FE;
-}
 
+
+#sddm li ul li a:hover
+{	
+	text-shadow: 2px 2px 4px gray; 
+	color: black;
+}
 
 #sddm ul 
 {	
@@ -72,54 +83,11 @@ body
 		white-space: nowrap;
 		text-align: center;
 		text-decoration: none;
-		font: 18.5px arial;
+		font: 1em arial;
 	}
-#contact {
-	display: block;
-	margin: 0 10px 0 0;	
-	text-align: center;
-	text-decoration: none;
-}
-#contact a{	
-	margin: 0;
-	padding: 0;	
-	display: block;
-	list-style: none;
-	padding: 10px 0px;
-	float: left;
-	text-shadow: 0.5px 0.5px 0.5px #1440B8;
-	color: #1440B8;
-	font: bold 25px arial;
-	width:33.3%;
-	text-align: center;
-	text-decoration: none;
-}
-#contact h3{	
-	margin: 0;
-	padding: 0;	
-	display: block;
-	list-style: none;
-	padding: 10px;
-	float: left;
 
-	color: black;
 
-	width:100%;
-	text-align: center;
 
-}
-#contact img
-{	
-	float: left;
-    width:  25%;
-    height: 350px;
-    object-fit: cover;
-}
-#contact a:hover
-{	
-	text-shadow: 2px 2px 4px #1440B8; 
-	color: #0247FE;
-}
 #assign3 
 {
 	background-image: url('back (2).jpg');
