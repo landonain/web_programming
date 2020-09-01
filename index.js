@@ -18,6 +18,7 @@ function validateForm()
 	
 	if(!validateNotBlank(document.forms["myForm"]["phone-number"].value, "phone number")) return false;
 	
+	if(!getValue()) return false;
 	return true;
 	
  }
@@ -53,5 +54,68 @@ function validateForm()
 		return false;
 	}
  }
-
+ function getValue() {
+	var retVal = prompt("What is the current year? ", "Enter year here");
+	if(retVal == "2020"){
+		return true;
+	}		
+	else{
+		return false;
+	}
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+$("#phone-number", '#myForm')
+	.keydown(function (e) {
+		var key = e.which || e.charCode || e.keyCode || 0;
+		$phone = $(this);
+		
+		if($phone.val().length === 1 && (key === 8 || key === 46)) {
+			$phone.val('(');
+			return false;
+		}
+		else if ($phone.val().charAt(0) !== '('){
+			$phone.val('('+String.fromCharCode(e.keyCode)+'');
+		}
+		if (key !== 8 && key !==9) {
+			if ($phone.val().length === 4){
+				$phone.val($phone.val()+ ')');
+			}
+			if ($phone.val().length === 5){
+				$phone.val($phone.val()+ ' ');
+			}
+			if ($phone.val().length === 9){
+				$phone.val($phone.val()+ '-');
+			}
+		}
+		//this limits key inputs to numbers/ spaces/ backspace / tab - 
+		return (key == 8 ||
+			key == 9 ||
+			key == 46 ||
+			(key >= 48 && key <= 57) ||
+				(key >= 96 && key <= 105));
+	})
+	.bind('focus click', function () {
+		$phone = $(this);
+		
+		if ($phone.val().length === 0) {
+			$phone.val('(');
+		}
+		else { 
+			var val = $phone.val();
+			$phone.val('').val(val);
+		}	
+	})
+	.blur(function() {
+		$phone = $(this);
+		if($phone.val() === '(') {
+			$phone.val('');
+		}
+	});
+	
  
