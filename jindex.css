@@ -130,6 +130,7 @@ input[type=submit], select
 	background: black;
 	border: none;
 	border-radius: 4px;
+	cursor: pointer;
 }
 input[type=submit]:hover {
   background-color: gray;

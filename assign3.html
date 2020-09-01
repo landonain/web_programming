@@ -7,7 +7,9 @@
 	<meta name="keywords" content="HTML5, CSS, JavaScript">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <title>Jquery menu example</title>
+	<!--the script was loading before the page and not allowing the code to run --> 
+	<script src= "assign3.js" type="text/javascript"></script>
+    <title>Assignment 3 Form Validation</title>
 	<link rel = "stylesheet" type="text/css" href= "jindex.css" />
 	
 <body>
@@ -19,27 +21,26 @@
 	<br><br>
 	<div class="container">
 		<form id="myForm" name="myForm" onsubmit="return validateForm();" action="mailto:landogriffin860@gmail.com" method="post" enctype="text/plain">
-		<p>
-			<label>Enter First Name (Javascript): </label><br>
-				<input type="text" name="firName"><br>
-			<label>Enter Last Name (Javascript): </label><br>
-				<input type="text" name="lasName"><br>
-			<label>Enter Address (Javascript): </label><br>
-				<input type="text" name="address"><br>
-			<label>Enter birthdate (Javascript): </label><br>
-				<input type="date" name="birthdate"><br>
-			</label>
-			<label>Enter Email address (Javascript): </label><br>
-				<input type="email" name="email"><br>
-			<label>Enter Phone Number (Javascript): </label><br>
-				<input type="text" id="phone-number" name="phone-number" maxlength="14" placeholder="(XXX) XXX-XXXX" ><br>
-			
-			<!--the script was loading before the page and not allowing the code to run --> 
-			<script src= "index.js" type="text/javascript"></script>
-			<label>Enter Message for developer (Javascript): </label><br> 
-			<input type="text" name="message"><br><br>
-			<input type="submit" name="submit" value="Submit">
-		</p>
+			<p>
+				<label>Enter First Name (Javascript): </label><br>
+					<input type="text" name="firName"><br>
+				<label>Enter Last Name (Javascript): </label><br>
+					<input type="text" name="lasName"><br>
+				<label>Enter Address (Javascript): </label><br>
+					<input type="text" name="address"><br>
+				<label>Enter birthdate (Javascript): </label><br>
+					<input type="date" name="birthdate"><br>
+				</label>
+				<label>Enter Email address (Javascript): </label><br>
+					<input type="email" name="email"><br>
+				<label>Enter Phone Number (Javascript): </label><br>
+					<input type="text" id="phone-number" name="phone-number" maxlength="14" placeholder="(XXX) XXX-XXXX" ><br>
+				
+				
+				<label>Enter Message for developer (Javascript): </label><br> 
+				<input type="text" name="message">
+				<input type="submit" name="submit" value="Submit">
+			</p>
 		</form>
 	</div>
 	
