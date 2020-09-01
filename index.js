@@ -1,23 +1,16 @@
 function validateForm()
  {
 	//var fname = document.forms["myForm"]["name"].value;
-	/*
+
 	if(!validateNotBlank(document.forms["myForm"]["firName"].value, "First Name")) return false;
 	if(!validateNotBlank(document.forms["myForm"]["lasName"].value, "Last Name")) return false;
 	if(!validateNotBlank(document.forms["myForm"]["birthdate"].value, "birthdate")) return false;
 	if(!validateDate()) return false;
 	if(!validateNotBlank(document.forms["myForm"]["address"].value, "address")) return false;
-	
 	if(!validateNotBlank(document.forms["myForm"]["email"].value, "email address")) return false;
 	if(!validateNotBlank(document.forms["myForm"]["email"].value, "birthdate")) return false;
-	
 	if(!validateNotBlank(document.forms["myForm"]["email"].value, "message")) return false;
-	if(!validateNotBlank(document.forms["myForm"]["email"].value, "first name of the current president")) return false;
-	*/
-	//debugger;
-	
 	if(!validateNotBlank(document.forms["myForm"]["phone-number"].value, "phone number")) return false;
-	
 	if(!getValue()) return false;
 	return true;
 	
@@ -25,7 +18,6 @@ function validateForm()
 
  function validateNotBlank(value, label)
  {
-   alert("Now validating form");
    if (value==null || value=="")
 	 {
 	 alert("Please enter a value for " + label);
@@ -60,6 +52,7 @@ function validateForm()
 		return true;
 	}		
 	else{
+		alert("WHAT YEAR IS IT?");
 		return false;
 	}
  }

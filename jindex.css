@@ -10,7 +10,7 @@ body
   background-size: cover;
 	overflow-x: hidden;
 }	
-#sddm
+#index
 {	
 	margin: 0;
 	padding: 0;
@@ -25,7 +25,7 @@ body
 	
 
 }
-#sddm li
+#index li
 {	
 	margin: 0;
 	padding: 0;	
@@ -46,7 +46,7 @@ body
    color: black;
    text-align: center;
 }
-#sddm li a
+#index li a
 {	
 	display: block;
 	margin: 0 1px 0 0;
@@ -58,13 +58,13 @@ body
 
 
 
-#sddm li a:hover
+#index li a:hover
 {	
 	text-shadow: 2px 2px 4px gray; 
 	color: black;
 }
 
-#sddm ul 
+#index ul 
 {	
 	position: absolute;
 	visibility: hidden;
@@ -73,7 +73,7 @@ body
 	padding: 0;
 }
 
-	#sddm ul li a
+	#index ul li a
 	{	
 		position: relative;
 		display: block;
@@ -88,10 +88,54 @@ body
 
 
 
-#assign3 
+input[type=text], select 
 {
-	background-image: url('back (2).jpg');
-	background-repeat: no-repeat;
-	background-attachment: fixed;  
-	background-size: cover;
+	box-sizing: border-box;
+	width: 25%;
+	margin: 8px 0;
+	padding: 12px 20px;
+	display: block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	
+}
+input[type=date], select 
+{
+	box-sizing: border-box;
+	width: 25%;
+	margin: 8px 0;
+	padding: 12px 20px;
+	display: block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+input[type=email], select 
+{
+	box-sizing: border-box;
+	width: 25%;
+	margin: 8px 0;
+	padding: 12px 20px;
+	display: block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+input[type=submit], select 
+{
+	box-sizing: border-box;
+	width: 25%;
+	margin: 8px 0;
+	padding: 14px 20px;
+	display: block;
+	color: white;
+	background: black;
+	border: none;
+	border-radius: 4px;
+}
+input[type=submit]:hover {
+  background-color: gray;
+}
+div.container {
+  border-radius: 5px;
+
+  padding: 20px;
 }

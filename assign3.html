@@ -11,30 +11,37 @@
 	<link rel = "stylesheet" type="text/css" href= "jindex.css" />
 	
 <body>
-	<ul id="sddm">
+	<ul id="index">
 		<li>
 			<a href="index.html">Home</a>
 		</li>
 	</ul>
 	<br><br>
-	<form id="myForm" name="myForm" onsubmit="return validateForm();" action="mailto:landogriffin860@gmail.com" method="post" enctype="text/plain">
-	<p>
-		<!--
-		<label>What is the first name of the current president?(Javascript): <input type="text" name="confirmation"</label><br>
-		-->
-		<label>Enter First Name (Javascript): <input type="text" name="firName"</label><br>
-		<label>Enter Last Name (Javascript): <input type="text" name="lasName"</label><br>
-		<label>Enter Address (HTML5): <input type="text" name="address"</label><br>
-		<label>Enter birthdate (Javascript): <input type="date" name="birthdate"</label><br>
-		<label>Enter Email address (Javascript): <input type="email" name="email"</label><br>
-		<label>Enter Message for developer (Javascript): <input type="text" name="message"</label><br>
-		<label>Enter Phone Number (Javascript): <input type="text" id="phone-number" name="phone-number" maxlength="14" placeholder="(XXX) XXX-XXXX" </label><br>
-		<!--the script was loading before the page and not allowing the code to run --> 
-		<script src= "index.js" type="text/javascript"></script>
-		<input type="submit" name="submit" value="Submit">
-	</p>
-	</form>
-	
+	<div class="container">
+		<form id="myForm" name="myForm" onsubmit="return validateForm();" action="mailto:landogriffin860@gmail.com" method="post" enctype="text/plain">
+		<p>
+			<label>Enter First Name (Javascript): </label><br>
+				<input type="text" name="firName"><br>
+			<label>Enter Last Name (Javascript): </label><br>
+				<input type="text" name="lasName"><br>
+			<label>Enter Address (Javascript): </label><br>
+				<input type="text" name="address"><br>
+			<label>Enter birthdate (Javascript): </label><br>
+				<input type="date" name="birthdate"><br>
+			</label>
+			<label>Enter Email address (Javascript): </label><br>
+				<input type="email" name="email"><br>
+			<label>Enter Phone Number (Javascript): </label><br>
+				<input type="text" id="phone-number" name="phone-number" maxlength="14" placeholder="(XXX) XXX-XXXX" ><br>
+			
+			<!--the script was loading before the page and not allowing the code to run --> 
+			<script src= "index.js" type="text/javascript"></script>
+			<label>Enter Message for developer (Javascript): </label><br> 
+			<input type="text" name="message"><br><br>
+			<input type="submit" name="submit" value="Submit">
+		</p>
+		</form>
+	</div>
 	
 	
 </body>
