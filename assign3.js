@@ -3,7 +3,9 @@ function validateForm()
 	if(!validateNotBlank(document.forms["myForm"]["name"].value, "Full Name")) return false;
 	if(!validateNotBlank(document.forms["myForm"]["birthdate"].value, "birthdate")) return false;
 	if(!validateDate()) return false;
-	if(!validateNotBlank(document.forms["myForm"]["address"].value, "address")) return false;
+	if(!validateNotBlank(document.forms["myForm"]["street"].value, "street")) return false;
+	if(!validateNotBlank(document.forms["myForm"]["city"].value, "city")) return false;
+	if(!validateNotBlank(document.forms["myForm"]["zip"].value, "zip")) return false;
 	if(!validateNotBlank(document.forms["myForm"]["email"].value, "email address")) return false;
 	if(!validateNotBlank(document.forms["myForm"]["email"].value, "birthdate")) return false;
 	if(!validateNotBlank(document.forms["myForm"]["email"].value, "message")) return false;
