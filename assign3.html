@@ -8,7 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<!--the script was loading before the page and not allowing the code to run --> 
-	<script src= "assign3.js" type="text/javascript"></script>
+	<script src= "assign3.js"></script>
     <title>Assignment 3 Form Validation</title>
 	<link rel = "stylesheet" type="text/css" href= "jindex.css" />
 	<link rel = "stylesheet" type="text/css" href= "assign3.css" />
@@ -22,23 +22,21 @@
 	<div class="container">
 		<form id="myForm" name="myForm" onsubmit="return validateForm();" action="mailto:landogriffin860@gmail.com" method="post" enctype="text/plain">
 			<p>
-				<label>Enter Full name (Javascript): </label><br>
+				<label name="name">Enter Full name (Javascript): </label><br>
 					<input type="text" name="name"><br>
-				<label>Enter Street Address (Javascript): </label><br>
+				<label name="street">Enter Street Address (Javascript): </label><br>
 					<input type="text" name="street"><br>
-				<label>Enter City (Javascript): </label><br>
+				<label name="city">Enter City (Javascript): </label><br>
 					<input type="text" name="city"><br>
-				<label>Enter ZIP (Javascript): </label><br>
+				<label name="zip">Enter ZIP (Javascript): </label><br>
 					<input maxlength="5" type="text" id="zip" name="zip"><br>
-				<label>Enter birthdate (Javascript): </label><br>
+				<label name="birthdate">Enter birthdate (Javascript): </label><br>
 					<input type="date" name="birthdate"><br>
-				<label>Enter Email address (HTML5): </label><br>
+				<label name="email">Enter Email address (HTML5): </label><br>
 					<input type="email" name="email"><br>
-				<label>Enter Phone Number (Javascript): </label><br>
+				<label name="phone-number">Enter Phone Number (Javascript): </label><br>
 					<input type="text" id="phone-number" name="phone-number" maxlength="14" placeholder="(XXX) XXX-XXXX" ><br>
-				
-				
-				<label>Enter Message for developer (Javascript): </label><br> 
+				<label name="message">Enter Message for developer (Javascript): </label><br> 
 				<input type="text" name="message">
 				<input type="submit" name="submit" value="Submit">
 			</p>
