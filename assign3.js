@@ -1,7 +1,6 @@
 function validateForm()
  {
-	if(!validateNotBlank(document.forms["myForm"]["firName"].value, "First Name")) return false;
-	if(!validateNotBlank(document.forms["myForm"]["lasName"].value, "Last Name")) return false;
+	if(!validateNotBlank(document.forms["myForm"]["name"].value, "Full Name")) return false;
 	if(!validateNotBlank(document.forms["myForm"]["birthdate"].value, "birthdate")) return false;
 	if(!validateDate()) return false;
 	if(!validateNotBlank(document.forms["myForm"]["address"].value, "address")) return false;
@@ -13,6 +12,8 @@ function validateForm()
 	return true;
 	
  }
+
+
 
  function validateNotBlank(value, label)
  {
@@ -55,10 +56,22 @@ function validateForm()
 		return false;
 	}
  }
- 
- 
- 
- 
+  $(document).ready(function() 
+{
+	$("#zip", "#myForm")
+		.keydown(function (e) {
+			var key = e.which || e.charCode || e.keyCode || 0;
+			
+			
+			return (key == 8 ||
+					key == 9 ||
+					key == 46 ||
+					(key >= 48 && key <= 57) ||
+						(key >= 96 && key <= 105));
+		})
+});
+
+
  
 //The fix for the onload issue lies with document ready function
 // that calls the code after the html page has loaded
