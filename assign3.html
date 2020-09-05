@@ -22,22 +22,22 @@
 	<div class="container">
 		<form id="myForm" name="myForm" onsubmit="return validateForm();" action="mailto:landogriffin860@gmail.com" method="post" enctype="text/plain">
 			<p>
-				<label>Enter Full name (Javascript):<br>
-					<input type="text" name="name"  placeholder="Full Name here"> </label><br>
-				<label>Enter Street Address (Javascript): ><br>
-					<input type="text" name="street"  placeholder="Street goes here"></label<br>
-				<label>Enter City (Javascript): <br>
-					<input type="text" name="city"  placeholder="City goes here"></label><br>
-				<label>Enter ZIP Code (Javascript): <br>
-					<input maxlength="5" type="text" id="zip" name="zip" placeholder="input zip code"></label><br>
-				<label>Enter birthdate (Javascript): <br>
-					<input type="date" name="birthdate"></label><br>
-				<label>Enter Email address (HTML5): <br>
-					<input type="email" name="email" placeholder="Add your email here"></label><br>
-				<label>Enter Phone Number (Javascript): <br>
-					<input type="text" id="phone-number" name="phone-number" maxlength="14" placeholder="(XXX) XXX-XXXX" ></label><br>
-				<label>Enter Message for developer (Javascript): <br> 
-				<textarea name="message" placeholder="Enter a passive agressive note here"></textarea></label>
+				<label for="name">Enter Full name (Javascript):</label>
+					<input type="text" name="name" id="name" placeholder="Full Name here"><br>
+				<label for="street">Enter Street Address (Javascript):</label>
+					<input type="text" name="street" id="street" placeholder="Street goes here"><br>
+				<label for="city">Enter City (Javascript):</label>
+					<input type="text" id="city" name="city"  placeholder="City goes here"><br>
+				<label for="zip">Enter ZIP Code (Javascript):</label>
+					<input maxlength="5" type="text" id="zip" name="zip" placeholder="input zip code"><br>
+				<label for="birthdate">Enter birthdate (Javascript): </label>
+					<input type="date" id="birthdate" name="birthdate"><br>
+				<label for="email">Enter Email address (HTML5): </label>
+					<input type="email" name="email" id="email" placeholder="Add your email here"><br>
+				<label for="phone-number">Enter Phone Number (Javascript): </label>
+					<input type="text" id="phone-number" name="phone-number" maxlength="14" placeholder="(XXX) XXX-XXXX" ><br>
+				<label for="message">Enter Message for developer (Javascript):</label>
+				<textarea name="message" id="message" placeholder="Enter a passive agressive note here"></textarea>
 				<input type="submit" name="submit" value="Submit">
 			</p>
 		</form>
