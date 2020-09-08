@@ -5,58 +5,6 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Jquery menu example</title>
 	<link rel = "stylesheet" type="text/css" href= "jindex.css" />
-	<script>
-
-	var timeout    = 2000;
-	var closetimer    = 0;
-	var ddmenuitem    = 0;
-
-	// open hidden layer
-	function mopen()
-	{    
-		// cancel close timer
-		mcancelclosetime();
-		// close old layer
-		mclose();
-		ddmenuitem = $(this).find('ul').eq(0).css('visibility', 'visible');
-	}
-	// close showed layer
-	function mclose()
-	{
-		if(ddmenuitem) ddmenuitem.css('visibility', 'hidden');
-	}
-
-	// go close timer
-	function mclosetime()
-	{
-		closetimer = window.setTimeout(mclose, timeout);
-	}
-
-	// cancel close timer
-	function mcancelclosetime()
-	{
-		if(closetimer)
-		{
-			window.clearTimeout(closetimer);
-			closetimer = null;
-		}
-	}
-
-	// close layer when click-out
-	
-	
-	$(document).ready(function()
-	{$('#sddm > li').bind('mouseover', mopen);
-     $('#sddm > li').bind('mouseout', mclosetime);});
-	
-	document.onclick = mclose; 
-	</script>
-	<style>
-		img {
-		  display: flex;
-	
-		}
-	</style>
 </head>
 <body id="contact">
 	<ul id="index">
@@ -69,6 +17,9 @@
 		<li>
 			<a href="https://www.linkedin.com/in/landon-simmons-379b88a2/">Linkedin</a>
 		</li>	
+		<li>
+			<a href="https://jsfiddle.net/user/Landonain1/fiddles/">JS Fiddles</a>
+		</li>
 	</ul>
 
 
