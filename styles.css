@@ -1,0 +1,13 @@
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+.left-side {
+    display: flex;
+    padding: 38px;
+}
+.right-side {
+    display: flex;
+    padding: 38px;
+}
