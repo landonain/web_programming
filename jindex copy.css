@@ -1,0 +1,88 @@
+html
+{
+	height: 100%;
+}
+body
+{
+	background-image: url('logo.jpg');
+	background-repeat: no-repeat;
+ 	background-attachment: fixed;  
+ 	background-size: cover;
+	overflow-x: hidden;
+	font-family: "Lato", sans-serif;
+}	
+#index
+{	
+	margin: 0;
+	padding: 0;
+	z-index: 30;
+}
+
+#logo{ 
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width:100%;
+	
+
+}
+#index li
+{	
+	margin: 0;
+	padding: 0;	
+	display: block;
+	box-sizing: border-box;
+	list-style: none;
+	float: left;
+
+	width: 20%;
+	
+}
+.footer
+{
+   position: fixed;
+   right:20%; 
+   bottom: 0;
+   width: 100%;
+   color: black;
+   text-align: center;
+}
+#index li a
+{	
+	display: block;
+	margin: 0 1px 0 0;
+	padding: 10px 4px;
+	color: black;
+	text-align: center;
+	text-decoration: none;
+}
+
+
+
+#index li a:hover
+{	
+	text-shadow: 1px 1px 2px gray; 
+	color: black;
+}
+
+#index ul 
+{	
+	position: absolute;
+	visibility: hidden;
+	margin: 0;
+	width: 100%;
+	padding: 0;
+}
+
+	#index ul li a
+	{	
+		position: relative;
+		display: block;
+		margin: 0;
+		padding: 10px 4px;
+		width: auto;
+		white-space: nowrap;
+		text-align: center;
+		text-decoration: none;
+
+	}

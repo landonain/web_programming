@@ -86,7 +86,7 @@ body {
 }
 
 .logo-wrapper img {
-    width: 30%;
+    width: 15%;
     margin-bottom: 20px;
 }
 .img-text-wrapper .subtitle {
@@ -102,7 +102,7 @@ body {
 }
 
 .img-darken {
-    transition: 0.5s;
+    transition: 1s;
     filter: brightness(10%);
 }
 /*about page*/
