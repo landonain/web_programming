@@ -3,23 +3,43 @@
 <head>
 	<meta charset="utf-8"/>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <title>Jquery menu example</title>
+	<title>Contact Page</title>
+	<script src= "javascript/assign3.js"></script>
 	<link rel = "stylesheet" type="text/css" href= "jindex.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 </head>
 <body id="contact">
-	<ul id="index">
-		<li>
-			<a href="index.html">Home</a>
-		</li>
-		<li>
-			<a href="https://github.com/landonain">Github</a>				
-		</li>
-		<li>
-			<a href="https://www.linkedin.com/in/landon-simmons-379b88a2/">Linkedin</a>
-		</li>	
-		<li>
-			<a href="https://jsfiddle.net/user/Landonain1/fiddles/">JS Fiddles</a>
-		</li>
-	</ul>	
+	<div class="nav-wrapper">
+		<ul id="index">
+			<li>
+				<a href="index.html">Home</a>
+			</li>
+			<li>
+				<a href="https://github.com/landonain">Github</a>				
+			</li>
+			<li>
+				<a href="https://www.linkedin.com/in/landon-simmons-379b88a2/">Linkedin</a>
+			</li>	
+			<li>
+				<a href="testing/index.html" >Portfolio</a>
+			</li>	
+		</ul>
+	</div>
+	<br><br>
+	<div class="container">
+		<form id="myForm" name="myForm" onsubmit="return validateForm();" action="mailto:landonsimmonsemail@gmail.com" method="post" enctype="text/plain">
+			<p>	
+				<label for="name">Enter Full name</label>
+					<input type="text" name="name" id="name" placeholder="Full Name here"><br>
+				<label for="email">Enter Email address</label>
+					<input type="email" name="email" id="email" placeholder="Add your email here"><br>
+				<label for="phone-number">Enter Phone Number (Javascript): </label>
+					<input type="text" id="phone-number" name="phone-number" maxlength="14" placeholder="(XXX) XXX-XXXX" ><br>
+				<label for="message">Input message for developer</label>
+				<textarea name="message" id="message" placeholder="I will contact you as soon as possible"></textarea>
+				<input type="submit" name="submit" value="Submit">
+			</p>
+		</form>
+	</div>	
 </body>
 </html>

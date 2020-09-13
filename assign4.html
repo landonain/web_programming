@@ -2,17 +2,20 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8"/>
-	<meta name="description" content="Javascript Calculator and formula webpage">
+	<meta name="description" content="Javascript Calculator and formula webpage using a Lissajous Curve from the Parametric Equation">
 	<meta name="author" content="Landon Simmons">
 	<meta name="keywords" content="HTML5, CSS, JavaScript">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://code.highcharts.com/highcharts.js"></script>
+	<script src="https://code.highcharts.com/modules/exporting.js"></script>
+	<script src= "javascript/assign4.js"></script>
 	<!--the script was loading before the page and not allowing the code to run --> 
-	<script src= "assign4.js"></script>
-    <title>Assignment 4 Calculator / Plotting</title>
-	<link rel = "stylesheet" type="text/css" href= "jindex.css" />
-	<link rel = "stylesheet" type="text/css" href= "assign4.css" />
-<body>
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+	<title>Assignment 4 Calculator / Plotting</title>
+	<link rel = "stylesheet" type="text/css" href= "jindex.css"/>
+	
+<body style="background-image: none;">
 	<ul id="index">
 		<li>
 			<a href="index.html">Home</a>
@@ -20,22 +23,21 @@
 	</ul>
 	<br><br>
 	<div class="container">
-		
-			<p>
-			</p>
-		<form id="myForm" method>
-			Input Here: <input id = "inp" type="text" size="100%"/><br/>
-			RegEx Here: <input id = "reg" type="text" size="100%"/><br/>
-		   <input id = "mathc" type="button" value="Try Match" onclick="testRegEx()"></input>
-		</form><br/>
-		<div id="results"></div>
-		Here are some Regular Expressions to try (just cut and paste them)<br/><br/>
-		<br/> <div id="firstLetter" onclick="pasteDiv(firstLetter)">\bt[a-z]+\b</div>  - this will give positive if any word begins with t and is surrounded by blank spaces \b for blank, t for first letter, [a-z]+ for multiple alpha characters.
-		<br/><br/> 
-		<div id="notBlank" onclick="pasteDiv(notBlank)">\S</div> - Is not blank, lower case \s means matches character or whitespace, Caps \S means opposite of \s, thus no characters or whitespace.
-		<br/><br/> 
-		<div id="allDigits" onclick="pasteDiv(allDigits)">^\s*\d+\s*$</div> - Is all digits ^ means negate the next item in expression which is \s, which is characters or whitespace, * turns off the ^, \d+ means one or more digits, \s*$ means must match pattern with characters until end of string.
+		<h1>Parametric Equation - Lissajous Curve Calculator</h1>
+		<p>x<sup>2</sup>&frasl; a<sup>2</sup> + y<sup>2</sup>&frasl; b<sup>2</sup> = 1 </p>				
+		<label for="a">Input a</label>
+			<input type="text" id="a" value="9" size="5" style="width:15%;"/><br>		
+		<label for="b">Input b</label>
+			<input type="text" id="b" value="25" size="5" style="width:15%;"/><br>
+		<label for="Kx">Input Kx (Lobe)</label>
+			<input type="text" id="Kx" value="25" size="5" style="width:15%;"/><br>	
+		<label for="Ky">Input Ky (Lobe)</label>
+			<input type="text" id="Ky" value="25" size="5" style="width:15%;"/><br>	
+		<input type="submit" onclick="calculateLis();" id="calculateLis" value="Calculate Lissajous Curve" style="width:15%;">
+		<input type="submit" onclick="plotValues();" value="Plot" id="plot" style="width:15%;">
 
+		<div id="canvas" style="min-width: 400px; margin: 0 auto"></div>
+		<p id="output"></p>		
 	</div>
 	
 	
