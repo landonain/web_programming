@@ -4,12 +4,12 @@ html
 }
 body
 {
-	background-image: url('logo.jpg');
+	font-family: "Lato", sans-serif;
+	background-image: url('../images/logo.jpg');
 	background-repeat: no-repeat;
  	background-attachment: fixed;  
  	background-size: cover;
 	overflow-x: hidden;
-	font-family: "Lato", sans-serif;
 }	
 #index
 {	
@@ -35,7 +35,7 @@ body
 	list-style: none;
 	float: left;
 
-	width: 20%;
+	width: 15%;
 	
 }
 .footer

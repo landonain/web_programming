@@ -5,6 +5,8 @@ function validateForm()
 	if(!validateDate()) return false;
 	if(!validateNotBlank(document.forms["myForm"]["street"].value, "street")) return false;
 	if(!validateNotBlank(document.forms["myForm"]["city"].value, "city")) return false;
+	if(!validateNotBlank(document.forms["myForm"]["state"].value, "state")) return false;
+	if(!validateState()) return false;
 	if(!validateNotBlank(document.forms["myForm"]["zip"].value, "zip")) return false;
 	if(!validateNotBlank(document.forms["myForm"]["email"].value, "email address")) return false;
 	if(!validateNotBlank(document.forms["myForm"]["email"].value, "birthdate")) return false;
@@ -26,7 +28,28 @@ function validateForm()
 	 }
 	return true;    
  }
- 
+
+ function validateState(){
+	var s = document.forms["myForm"]["state"].value;
+	var res = s.toUpperCase();
+	if (res == "FL" || res == "AL"|| res == "AK" || res =="MT"|| res =="NE"
+	|| res =="NE" || res =="AZ" || res =="NV" || res =="AR" || res =="NH"
+	|| res =="CA" || res =="NJ" || res =="CO" || res =="NM" || res =="CT"
+	|| res =="NY" || res =="DE" || res =="NC" || res =="ND" || res =="GA"
+	|| res =="OH" || res =="HI" || res =="OK" || res =="ID" || res =="OR"
+	|| res =="IL" || res =="IN" || res =="PA" || res =="RI" || res =="IA"
+	|| res =="SC" || res =="KS" || res =="SD" || res =="KY" || res =="TN"
+	|| res =="LA" || res =="TX" || res =="ME" || res =="UT" || res =="MD"
+	|| res =="VT" || res =="MA" || res =="VA" || res =="MI" || res =="WA"
+	|| res =="MN" || res =="WV" || res =="MS" || res =="WI" || res =="MO"
+	|| res =="WY") {
+		return true;
+	} else {
+		alert("State is not Valid - please try again.");
+		return false;
+	}
+ }
+
   function validateDate()
  {
 	var d = document.forms["myForm"]["birthdate"].value;
@@ -43,11 +66,23 @@ function validateForm()
 		return false;
 	}
 	if ( oldest > d_past ){
-		alert("Date is 90 years old");
+		alert("Date is over 90 years old");
 		return false;
 	}
 	return true;
  }
+ $(document).ready(function() 
+ {
+	 $("#state", "#myForm")
+		 .keydown(function (e) {
+			 var key = e.which || e.charCode || e.keyCode || 0;			 			 
+			 return (key == 8 ||
+					 key == 9 ||
+					 key == 46 ||
+					 //65 is keycode for a and 90 is the keycode for z
+					 (key >= 65 && key <= 90));
+		 })
+ });
  function getValue() {
 	var retVal = prompt("What is the current year? ", "Enter year here");
 	if(retVal == "2020"){

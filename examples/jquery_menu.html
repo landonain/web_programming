@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+    <title>My Website Home Page</title>
+	<link rel = "stylesheet" type="text/css" href= "../jindex.css"/>
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+	<script>
+	// Copyright 2006-2007 javascript-array.com
+
+	var timeout    = 1000;
+	var closetimer    = 0;
+	var ddmenuitem    = 0;
+
+	// open hidden layer
+	function mopen(id)
+	{    
+		// cancel close timer
+		mcancelclosetime();
+
+		// close old layer
+		if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+
+		// get new layer and show it
+		ddmenuitem = document.getElementById(id);
+		ddmenuitem.style.visibility = 'visible';
+
+	}
+	// close showed layer
+	function mclose()
+	{
+		if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+	}
+
+	// go close timer
+	function mclosetime()
+	{
+		closetimer = window.setTimeout(mclose, timeout);
+	}
+
+	// cancel close timer
+	function mcancelclosetime()
+	{
+		if(closetimer)
+		{
+			window.clearTimeout(closetimer);
+			closetimer = null;
+		}
+	}
+
+	// close layer when click-out
+	document.onclick = mclose; 
+	</script>
+<body>
+  <ul id="index">
+		<li><a href="#" 
+			onmouseover="mopen('m1')" 
+			onmouseout="mclosetime()">My Classes</a>
+			<div id="m1" 
+				onmouseover="mcancelclosetime()" 
+				onmouseout="mclosetime()">
+			<a href="https://roneaglin.online/cop4813/">Web Programming</a>
+			</div>
+		</li>
+		<li><a href="#" 
+			onmouseover="mopen('m2')" 
+			onblur="mopen('m2')" 
+			onfocus="mopen('m1')" 
+			onmouseout="mclosetime()">Assignments</a>
+			<div id="m2" 
+				onblur="mopen('m1')"
+				onfocus="mopen('m2')" 
+				onmouseover="mcancelclosetime()" 
+				onmouseout="mclosetime()">
+			<a href="assign1.html">Assignment 1</a>
+			<a href="assign2.html">Assignment 2</a>
+			<a href="index.html">Assignment 2 Jquery</a>
+			</div>
+		</li>
+		<li><a href="#">Programming</a></li>
+		<li><a href="#">Contact</a></li>
+	</ul>
+	<div style="clear:both"></div>
+</body>
+</html>

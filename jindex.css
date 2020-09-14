@@ -1,6 +1,6 @@
 html
 {
-	height: 100%;
+	
 }
 body
 {
@@ -35,7 +35,7 @@ body
 	list-style: none;
 	float: left;
 	font: 1em;
-	width: 20%;
+	width: 15%;
 	
 }
 .footer
@@ -91,53 +91,40 @@ body
 
 textarea 
 {
-	box-sizing: border-box;
-	width: 35%;
 	margin: 8px 0;
 	padding: 12px 20px;
-	display: block;
 	border: 1px solid #ccc;
 	border-radius: 4px;
 	
 }
 input[type=text], select 
 {
-	box-sizing: border-box;
-	width: 35%;
 	margin: 8px 0;
 	padding: 12px 20px;
-	display: block;
 	border: 1px solid #ccc;
 	border-radius: 4px;
 	
 }
 input[type=date], select 
 {
-	box-sizing: border-box;
-	width: 35%;
+
 	margin: 8px 0;
 	padding: 12px 20px;
-	display: block;
+
 	border: 1px solid #ccc;
 	border-radius: 4px;
 }
 input[type=email], select 
 {
-	box-sizing: border-box;
-	width: 35%;
 	margin: 8px 0;
 	padding: 12px 20px;
-	display: block;
 	border: 1px solid #ccc;
 	border-radius: 4px;
 }
 input[type=submit], select 
 {
-	box-sizing: border-box;
-	width: 35%;
 	margin: 8px 0;
 	padding: 14px 20px;
-	display: block;
 	color: white;
 	background: black;
 	border: none;
@@ -147,8 +134,29 @@ input[type=submit], select
 input[type=submit]:hover {
   background-color: gray;
 }
-div.container {
-  border-radius: 5px;
 
+.container {
+  border-radius: 5px;
   padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.container-forms-wrapper > form {
+	display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.nav-wrapper{
+	display: grid;
+    grid-template-columns: 1fr;
+}
+.container-forms-wrapper > form > .container-form-item {
+	margin: 10px;
+	width:75%;
+}
+.container-forms-wrapper > form > .container-form-item > #message{
+	width:100%;
+}
+.container-forms-wrapper > form > .container-form-item > #submit{
+	width:100%;
 }
