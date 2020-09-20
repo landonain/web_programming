@@ -9,37 +9,56 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://code.highcharts.com/highcharts.js"></script>
 	<script src="https://code.highcharts.com/modules/exporting.js"></script>
-	<script src= "javascript/assign4.js"></script>
+	<script src= "javascript/assign4.js"></script>	
 	<!--the script was loading before the page and not allowing the code to run --> 
 	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 	<title>Assignment 4 Calculator / Plotting</title>
 	<link rel = "stylesheet" type="text/css" href= "jindex.css"/>
-	
+</head>
 <body style="background-image: none;">
-	<ul id="index">
-		<li>
-			<a href="index.html">Home</a>
-		</li>
-	</ul>
-	<br><br>
 	<div class="container">
-		<h1>Parametric Equation - Lissajous Curve Calculator</h1>
-		<p>x<sup>2</sup>&frasl; a<sup>2</sup> + y<sup>2</sup>&frasl; b<sup>2</sup> = 1 </p>				
-		<label for="a">Input a</label>
-			<input type="text" id="a" value="9" size="5" style="width:15%;"/><br>		
-		<label for="b">Input b</label>
-			<input type="text" id="b" value="25" size="5" style="width:15%;"/><br>
-		<label for="Kx">Input Kx (Lobe)</label>
-			<input type="text" id="Kx" value="3.5" size="5" style="width:15%;"/><br>	
-		<label for="Ky">Input Ky (Lobe)</label>
-			<input type="text" id="Ky" value="25" size="5" style="width:15%;"/><br>	
-		<input type="submit" onclick="calculateLis();" id="calculateLis" value="Calculate Lissajous Curve" style="width:15%;">
-		<input type="submit" onclick="plotValues();" value="Plot" id="plot" style="width:15%;">
-
+		<div class="nav-wrapper">
+			<ul id="index">
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+			</ul>
+		</div>
+		<div class="container-forms-wrapper">
+			<h1>Parametric Equation - Lissajous Curve Calculator</h1>
+			<p>x<sup>2</sup>&frasl; a<sup>2</sup> + y<sup>2</sup>&frasl; b<sup>2</sup> = 1 </p>	
+			<!--<form id="myForm" name="myForm">-->
+				<div class="container-form-item">
+					<label for="a">Input a</label><br>
+						<input type="text" id="a" value="9" size="5"/>	
+				</div>
+				<div class="container-form-item">
+					<label for="b">Input b</label><br>
+						<input type="text" id="b" value="25" size="5"/>
+				</div>	
+				<div class="container-form-item">
+					<label for="Kx">Input Kx (Lobe)</label><br>
+						<input type="text" id="Kx" value="3.5" size="5"/>
+				</div>	
+				<div class="container-form-item">
+					<label for="Ky">Input Ky (Lobe)</label><br>
+						<input type="text" id="Ky" value="25" size="5"/>
+				</div>
+	
+			<div class="container-form-item">
+				<input type="submit" onclick="lise();" id="calculateLis" value="Calculate Lissajous Curve">
+			</div>		
+			<div class="container-form-item">
+				<input type="submit" onclick="plotValues();" value="Plot" id="plot">
+			</div>		
+																																		
+							
+		</div>
 		<div id="canvas" style="min-width: 400px; margin: 0 auto; width: 100%;"></div>
 		<p id="output"></p>		
 	</div>
-	
-	
+		
 </body>
 </html>
+<div id="canvas" style="min-width: 400px; margin: 0 auto; width: 100%;"></div>
+<p id="output"></p>	

@@ -77,7 +77,7 @@ body {
     top: 0; 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+ 
     height: 100%;
     align-items: center;
     text-align: center;
@@ -86,8 +86,8 @@ body {
 }
 
 .logo-wrapper img {
-    width: 15%;
-    margin-bottom: 20px;
+    width: 35%;
+    margin-bottom: 40px;
 }
 .img-text-wrapper .subtitle {
     transition: 1s;

@@ -4,24 +4,25 @@ var Ky = 0;
 var Kx = 0;
 var t = 0;
 var n = 0;
-var x = new Array();
-var y = new Array();
-var v = new Array();
+var x = [];
+var y = [];
+var v = [];
 
  
-function calculateLis() {
-  debugger;
-	a = Number($('#a').val());
+function lise() {
+ 
+  a = Number($('#a').val());
   b = Number($('#b').val());
   Kx = Number($('#Kx').val());
   Ky = Number($('#Ky').val());
   b = Math.sqrt(b);
   a = Math.sqrt(a);
   var i = 0;
+  
   for (var t = 0; t <= 2*Math.PI; t+=0.001){
-		x[i] = a * Math.cos(t*Kx);
-    y[i] = b * Math.sin(t*Ky);
-    v[i] = [x[i], y[i]];
+		x.push(a * Math.cos(t*Kx));
+    y.push(b * Math.sin(t*Ky));
+    v.push([x[i], y[i]]);
     i++;
 	}
 	displayValues();
@@ -29,6 +30,7 @@ function calculateLis() {
 
 
 function displayValues(){
+  
   var s = "";
   
   s =  'x<sup>2</sup>&frasl; ' + a  + ' + y<sup>2</sup>&frasl; ' + b + " = 1 <br>";
@@ -40,11 +42,13 @@ function displayValues(){
   for (var i = 0; i < v.length; i++){
   	s += " X = " + x[i] + " Y  = " + y[i] + "<br>";
   }
+  
 	output.innerHTML = s;
 }
 
 function plotValues() {
-	calculateLis();
+  lise();
+  
   chart = new Highcharts.Chart({
   	chart: {
     	renderTo:'canvas',

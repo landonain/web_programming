@@ -9,31 +9,42 @@
 	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 </head>
 <body id="contact">
-	<div class="nav-wrapper">
-		<ul id="index">
-			<li>
-				<a href="index.html">Home</a>
-			</li>	
-			<li>
-				<a href="testing/index.html" >Portfolio</a>
-			</li>	
-		</ul>
-	</div>
-	<br><br>
 	<div class="container">
-		<form id="myForm" name="myForm" onsubmit="return validateForm();" action="mailto:landonsimmonsemail@gmail.com" method="post" enctype="text/plain">
-			<p>	
-				<label for="name">Enter Full name</label>
-					<input type="text" name="name" id="name" placeholder="Full Name here"><br>
-				<label for="email">Enter Email address</label>
-					<input type="email" name="email" id="email" placeholder="Add your email here"><br>
-				<label for="phone-number">Enter Phone Number (Javascript): </label>
-					<input type="text" id="phone-number" name="phone-number" maxlength="14" placeholder="(XXX) XXX-XXXX" ><br>
-				<label for="message">Input message for developer</label>
-				<textarea name="message" id="message" placeholder="I will contact you as soon as possible"></textarea>
-				<input type="submit" name="submit" value="Submit">
-			</p>
-		</form>
-	</div>	
+		<div class="nav-wrapper">
+			<ul id="index">
+				<li>
+					<a href="index.html">Home</a>
+				</li>	
+				<li>
+					<a href="testing/index.html" >Portfolio</a>
+				</li>	
+			</ul>
+		</div>
+		<br><br>
+		<div class="container-forms-wrapper">
+			<form id="myForm" name="myForm" onsubmit="return validateForm();" action="mailto:landonsimmonsemail@gmail.com" method="post" enctype="text/plain">
+				<div class="container-form-item">
+					<label for="name">Enter Full name</label><br>
+						<input type="text" name="name" id="name" placeholder="Full Name here">
+				</div>
+				<div class="container-form-item">
+					<label for="email">Enter Email address</label><br>
+						<input type="email" name="email" id="email" placeholder="Add your email here">
+				</div>
+				<div class="container-form-item">
+					<label for="phone-number">Enter Phone Number: </label><br>
+						<input type="text" id="phone-number" name="phone-number" maxlength="14" placeholder="(XXX) XXX-XXXX" >
+				</div>
+				<div class="container-form-item">
+					<label for="message">I will contact you as soon as possible</label><br>
+					<textarea name="message" id="message"  placeholder="Enter message here"></textarea>
+				</div>
+				<div class="container-form-item">
+					<input type="submit" id="submit" name="submit" value="Submit">
+				</div>
+			</form>
+		</div>	
+	</div>
+	
 </body>
 </html>
