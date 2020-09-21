@@ -10,7 +10,9 @@ var v = [];
 
  
 function lise() {
- 
+  x.splice(0, x.length)
+  y.splice(0, y.length)
+  v.splice(0, v.length)
   a = Number($('#a').val());
   b = Number($('#b').val());
   Kx = Number($('#Kx').val());
@@ -43,7 +45,7 @@ function displayValues(){
   	s += " X = " + x[i] + " Y  = " + y[i] + "<br>";
   }
   
-	output.innerHTML = s;
+  output.innerHTML = s;
 }
 
 function plotValues() {
