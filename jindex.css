@@ -175,12 +175,12 @@ input[type=submit]:hover {
 	display: flex;
 	justify-content: center;
 }
-.container-form-item-assign5 {
-	display: flexbox;
-	justify-content: center;
-    grid-template-columns: 1fr;
-}
-.container-form-item-canvas {
+
+.container-forms-wrapper-5 {
 	display: flex;
-	justify-content: center;
+	flex-flow: row wrap;
+
+}
+.container-form-item-5 {
+	text-align: center;
 }
