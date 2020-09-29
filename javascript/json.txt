@@ -1,4 +1,4 @@
-starcraft = {
+{
     "title":"Artosis",
     "age":"37",
     "name":"Daniel",
