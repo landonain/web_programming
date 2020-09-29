@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="description" content="Assignment 5 Spirograph">
+	<meta name="author" content="Landon Simmons">
+	<meta name="keywords" content="HTML5, CSS, JavaScript">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://code.highcharts.com/highcharts.js"></script>
+	<script src="https://code.highcharts.com/modules/exporting.js"></script>
+	<script src= "javascript/assign5.js"></script>	
+	<!--the script was loading before the page and not allowing the code to run --> 
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+	<title>Assignment 5 Spirograph Generator</title>
+	<link rel = "stylesheet" type="text/css" href= "jindex.css"/>
+</head>
+<body style="background-image: none;">
+	<div class="container">
+		<div class="nav-wrapper">
+			<ul id="index">
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+			</ul>
+			
+		</div>
+		<div class="title-for-assignment5">
+			<h1>Spirograph Generator</h1>
+		</div>
+		<div class="container-forms-wrapper">
+			
+			<div class="container-form-item-assign5">
+				<label for="RR">Input R</label>
+					<input type="text" id="RR" value="75" size="5"/>
+		
+				<label for="r">Input r</label>
+					<input type="text" id="r" value="35" size="5"/>
+			
+				<label for="O">Input O</label>
+					<input type="text" id="O" value="60" size="5"/>
+	
+				<label for="t">Input t</label>
+					<input type="text" id="t" value="7" size="5"/>
+			</div>
+			<div class="container-form-item-assign5">
+				<input type="submit" onclick="drawSpiro(85, 25, 40, 5, ctx);" value="Generate Spiro">
+				<input type="submit" onclick="generateNumbers(ctx);" value="Generate Random Spiro">
+				<input type="submit" onclick="generateUserNumbers(ctx);" value="Generate User Spiro">
+			</div>
+				
+			<div class="container-form-item-assign5">		
+				<div class="container-form-item-canvas">
+					<canvas id="myCanvas" width="400" height="400" style="border:1px solid #d3d3d3;">
+						Your browser does not support the HTML5 canvas tag.</canvas>
+				</div>
+			</div>																																
+								
+		</div>
+	</div>
+
+</body>
+</html>

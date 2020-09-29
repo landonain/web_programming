@@ -127,7 +127,12 @@ input[type=submit]:hover {
   border-radius: 5px;
   padding: 20px;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr; 
+}
+
+.container-forms-wrapper_assign5 {
+	display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .container-forms-wrapper > form {
@@ -160,4 +165,22 @@ input[type=submit]:hover {
 }
 .container-forms-wrapper > .container-form-item >  submit{
 	width:50%;
+}
+
+/*Assignment 5 css */
+
+
+
+.title-for-assignment5 > h1 {
+	display: flex;
+	justify-content: center;
+}
+.container-form-item-assign5 {
+	display: flexbox;
+	justify-content: center;
+    grid-template-columns: 1fr;
+}
+.container-form-item-canvas {
+	display: flex;
+	justify-content: center;
 }
