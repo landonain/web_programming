@@ -38,8 +38,7 @@ xmlhttp.open("GET", "json.json", true);
 xmlhttp.send(); 
 
 */
-//I ran into permission errors with S3 requests being passed on the same domain, I bypassed this by redirecting to cors header application
-fetch("https://cors-anywhere.herokuapp.com/https://s3.amazonaws.com/legitwebstuff.com/javascript/json.json")
+fetch("https://cors-anywhere.herokuapp.com/https://cors-bucket12.s3.amazonaws.com/json.json")
   .then(function(resp){
     return resp.json();
   })
@@ -71,8 +70,7 @@ if (this.readyState == 4 && this.status == 200){
   document.getElementById("demo3").innerHTML = myObj.pros;
 }
 };
-//I ran into permission errors with S3 requests being passed on the same domain, I bypassed this by redirecting to cors header application
-xmlhttp.open("GET", "https://cors-anywhere.herokuapp.com/https://s3.amazonaws.com/legitwebstuff.com/javascript/json.json", true);
+xmlhttp.open("GET", "https://cors-anywhere.herokuapp.com/https://cors-bucket12.s3.amazonaws.com/json.json", true);
 xmlhttp.send(); 
 
 
@@ -101,8 +99,7 @@ xmlhttp.onreadystatechange = function(){
     document.getElementById("demo4").innerHTML = txt;  
   }
 }; 
-//I ran into permission errors with S3 requests being passed on the same domain, I bypassed this by redirecting to cors header application
-xmlhttp.open("GET", "https://cors-anywhere.herokuapp.com/https://s3.amazonaws.com/legitwebstuff.com/javascript/json.json", true);
+xmlhttp.open("GET", "https://cors-anywhere.herokuapp.com/https://cors-bucket12.s3.amazonaws.com/json.json", true);
 xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 xmlhttp.send();
 
