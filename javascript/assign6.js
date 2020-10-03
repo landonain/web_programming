@@ -38,7 +38,7 @@ xmlhttp.open("GET", "json.json", true);
 xmlhttp.send(); 
 
 */
-fetch("./json.json")
+fetch("http://legitwebstuff.com/javascript/json.json")
   .then(function(resp){
     return resp.json();
   })
@@ -70,7 +70,7 @@ if (this.readyState == 4 && this.status == 200){
   document.getElementById("demo3").innerHTML = myObj.pros;
 }
 };
-xmlhttp.open("GET", "json.json", true);
+xmlhttp.open("GET", "http://legitwebstuff.com/javascript/json.json", true);
 xmlhttp.send(); 
 
 
@@ -98,7 +98,7 @@ xmlhttp.onreadystatechange = function(){
     document.getElementById("demo4").innerHTML = txt;  
   }
 }; 
-xmlhttp.open("POST", "json.json", true);
+xmlhttp.open("POST", "http://legitwebstuff.com/javascript/json.json", true);
 xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 xmlhttp.send();
 
