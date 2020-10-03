@@ -38,7 +38,7 @@ xmlhttp.open("GET", "json.json", true);
 xmlhttp.send(); 
 
 */
-fetch("https://legitwebstuff.com/javascript/json.json")
+fetch("https://cors-anywhere.herokuapp.com/https://s3.amazonaws.com/legitwebstuff.com/javascript/json.json")
   .then(function(resp){
     return resp.json();
   })
@@ -70,7 +70,7 @@ if (this.readyState == 4 && this.status == 200){
   document.getElementById("demo3").innerHTML = myObj.pros;
 }
 };
-xmlhttp.open("GET", "https://legitwebstuff.com/javascript/json.json", true);
+xmlhttp.open("GET", "https://cors-anywhere.herokuapp.com/https://s3.amazonaws.com/legitwebstuff.com/javascript/json.json", true);
 xmlhttp.send(); 
 
 
@@ -91,6 +91,7 @@ xmlhttp.onreadystatechange = function(){
     //start of the table
     txt += "<table border='1'>";
     //main issue was the way the data was being called from the JSON POST
+    debugger;
     for (x in myObj.pros) {
       txt += "<tr><td>" + myObj.pros[x]+ "</td></tr>";
     }
@@ -98,7 +99,7 @@ xmlhttp.onreadystatechange = function(){
     document.getElementById("demo4").innerHTML = txt;  
   }
 }; 
-xmlhttp.open("POST", "https://legitwebstuff.com/javascript/json.json", true);
+xmlhttp.open("GET", "https://cors-anywhere.herokuapp.com/https://s3.amazonaws.com/legitwebstuff.com/javascript/json.json", true);
 xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 xmlhttp.send();
 
