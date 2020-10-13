@@ -1,0 +1,47 @@
+body
+{
+	font-family: "Lato", sans-serif;
+	
+}	
+#index
+{	
+	margin: 30;
+	padding: 30;
+}
+#index li
+{	
+	margin: 0;
+	padding: 0;	
+	list-style: none;
+	font: 1em;
+	width: 15%;
+	
+}
+#index li a
+{	
+	margin: 0 1px 0 0;
+	padding: 10px 4px;
+	color: black;
+	text-align: center;
+	list-style: none;
+	text-decoration: none;
+}
+.container{
+	display: flex;
+	align-items: center;
+}
+#deal,#droppable{
+
+	width: 100px;
+	height: 100px;
+	margin: 0;
+	padding: 0;
+	border:1px solid black;
+
+}
+#myCardHolder{
+
+	width: 600;
+	height: 300;
+	border:1px solid black;
+}

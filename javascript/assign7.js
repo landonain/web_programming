@@ -16,8 +16,8 @@ function dealSuit(c){
     var img = document.createElement("img");
     img.src = "./images/PNG-cards-1.3/" + c + i + ".png";
     img.id = c + i;
-    img.height = 150;
-    img.width = 75;
+    img.height = 100;
+    img.width = 50;
     document.getElementById("myCardHolder").appendChild(img);
     $(img).draggable();
     removeCard(i);
@@ -28,7 +28,6 @@ function dealSuit(c){
 
 function dealCard(i) {
 	if (numberOfCardsInDeck == 0) return false;
-    debugger;
     dealSuit("c");
     dealSuit("d");
     dealSuit("h");
@@ -55,10 +54,4 @@ $("#droppable").droppable({
 });
 
 
-$( function() {
-	$("#makeMedraggable").draggable({
-    containment: '#content',
-    cursor: 'move',
-    snap: '#content'
-  });
-});
+

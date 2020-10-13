@@ -12,21 +12,29 @@
 	<!--the script was loading before the page and not allowing the code to run --> 
 	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 	<title>Assignment 7  Jquery Card Dealing</title>
-	<link rel = "stylesheet" type="text/css" href= "jindex.css"/>
+	<link rel = "stylesheet" type="text/css" href= "assignment.css"/>
 </head>
-<body style="background-image: none;flex-wrap: wrap; justify-content: space-between;">
-	<div class="container">
+<body style="background-image: none;">
+
 		<div class="nav-wrapper">
 			<ul id="index">
 				<li>
 					<a href="index.html">Home</a>
 				</li>
 			</ul>	
-		</div>
-		<input type="button" value="Deal Card" id="deal" />	
-		<div id="myCardHolder" style="width:975px; height: 615px; border:2px solid black;"></div>
-		<div id="droppable" style="width:75px; height: 150px; border:2px solid black;">Drop Card</div>
-		<script src= "javascript/assign7.js"></script>
+        </div>
+        <h3>
+            Removing cards with Jquery and Javascript. This uses the draggable Jquery class and droppable remove to clear out cards. 
+        </h3>
+        <div class="container">
+            <input type="button" value="Deal Card" id="deal"/>	
+            <div id="myCardHolder" style="width:650px; height: 415px; border:2px solid black;"></div>    
+            <div id="droppable" style="width:100px; height: 100px; border:2px solid black;">Drop Card</div>
+        
+            
+            <script src= "javascript/assign7.js"></script>
+        </div>
+		
 	</div>
 
 </body>
