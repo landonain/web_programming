@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="description" content="Assignment 7 Jquery Card Game">
+	<meta name="author" content="Landon Simmons">
+	<meta name="keywords" content="HTML5, CSS, JavaScript">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>
+		
+	<!--the script was loading before the page and not allowing the code to run --> 
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+	<title>Assignment 9 Basic Animations</title>
+	<link rel = "stylesheet" type="text/css" href= "assignment9.css"/>
+</head>
+<body style="background-image: none;">
+
+		<div class="nav-wrapper">
+			<ul id="index">
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+			</ul>	
+        </div>
+        <h1 style="text-align: center;">
+			Keep clicking!
+		</h1>
+		
+        <div class="row">
+			<div class="column">
+				<canvas id="myCanvas" width="600" height="600"></canvas>
+			</div>
+			<div class="column">
+				<h2>
+					Each click generates another effect on the canvas.
+					Each click will reverse the movement of the objects in the canvas.
+					The first click adds a 2nd ball.
+					The 2rd click generates a final ball and every click after that will change the ball radius on the 2nd and 3rd balls.  
+				</h2>
+			</div>	
+			
+            
+            <script src= "javascript/assign9.js"></script>
+        </div>
+		
+
+</body>
+</html>

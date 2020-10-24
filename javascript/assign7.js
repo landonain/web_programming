@@ -8,6 +8,8 @@ var numberOfCardsInDeck = 54;
 var suit = 13;
 var counter = 0;
 var c = "";
+var rachelsBad = false;
+
 
 function dealSuit(c){
   var i = 1;
@@ -27,11 +29,12 @@ function dealSuit(c){
 }
 
 function dealCard(i) {
-	if (numberOfCardsInDeck == 0) return false;
+	if (numberOfCardsInDeck == 0 || rachelsBad == true) return false;
     dealSuit("c");
     dealSuit("d");
     dealSuit("h");
     dealSuit("s");
+    rachelsBad = true;
 }
 
 function randomCard (){
