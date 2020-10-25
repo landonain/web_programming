@@ -9,6 +9,10 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://code.highcharts.com/highcharts.js"></script>
 	<script src="https://code.highcharts.com/modules/exporting.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<script src= "javascript/assign4.js"></script>	
 	<!--the script was loading before the page and not allowing the code to run --> 
 	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
@@ -16,14 +20,65 @@
 	<link rel = "stylesheet" type="text/css" href= "jindex.css"/>
 </head>
 <body style="background-image: none;">
-	<div class="container">
-		<div class="nav-wrapper">
-			<ul id="index">
-				<li>
-					<a href="index.html">Home</a>
-				</li>
-			</ul>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand" href="#">Web Design by Landon Simmons</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+		  <ul class="navbar-nav ml-auto">
+			<li class="nav-item active">
+			  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				  Assignments
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+				  <a class="dropdown-item" href="assign1.html">Assignment 1</a>
+				  <a class="dropdown-item" href="index_older.html">Assignment 2</a>
+				  <a class="dropdown-item" href="assign3.html">Assignment 3</a>
+				  <a class="dropdown-item" href="assign4.html">Assignment 4</a>
+				  <a class="dropdown-item" href="assign5.html">Assignment 5</a>
+				  <a class="dropdown-item" href="assign6.html">Assignment 6</a>
+				  <a class="dropdown-item" href="assign7.html">Assignment 7</a>
+				  <a class="dropdown-item" href="assign9.html">Assignment 9</a>
+				  <a class="dropdown-item" href="assign10.html">Assignment 10 - Under Construction</a>
+				  <a class="dropdown-item" href="assign11.html">Assignment 11 - Under Construction</a>
+				  <a class="dropdown-item" href="assign12.html">Assignment 12 - Under Construction</a>
+				  <a class="dropdown-item" href="assign13.html">Assignment 13 - Under Construction</a>
+				  <a class="dropdown-item" href="assign14.html">Assignment 14 - Under Construction</a>
+				  <a class="dropdown-item" href="assign15.html">Assignment 15 - Under Construction</a>
+				</div>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Programming
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+					<a class="dropdown-item" href="https://www.w3schools.com/">W3 Schools</a>
+					<a class="dropdown-item" href="https://www.w3schools.com/colors/colors_mixer.asp?colorbottom=FFFFF0&colortop=FFFFFF">Color Picker</a>
+					<a class="dropdown-item" href="https://achecker.ca/checker/index.php">Accessibility review</a>
+					<a class="dropdown-item" href="https://validator.w3.org/">Error review</a>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					My Classes
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+					<a class="dropdown-item" href="https://roneaglin.online/cop4813/">Web Programming</a>
+					<a class="dropdown-item" href="https://class.daytonastate.edu/d2l/home/378355">System Integration</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="testing/index.html">Portfolio</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="contact.html">Contact</a>
+			</li>	
+		  </ul>
 		</div>
+	  </nav>
+	<div class="container">
 		<div class="container-forms-wrapper">
 			<h1>Parametric Equation - Lissajous Curve Calculator</h1>
 			<p>x<sup>2</sup>&frasl; a<sup>2</sup> + y<sup>2</sup>&frasl; b<sup>2</sup> = 1 </p>	
