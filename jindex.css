@@ -185,9 +185,12 @@ input[type=submit]:hover {
 	text-align: center;
 }
 
-@media only screen and (max-width: 325px){
+
+/*Assignment 10 css */
+@media only screen and (max-width: 400px){
 	body
 	{		
+		font-family: "Lato", sans-serif;
 		background-image: url("images/mobile.jpg");
 	}	
 }
