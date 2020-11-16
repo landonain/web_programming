@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="description" content="Assignment 7 Jquery Card Game">
+	<meta name="author" content="Landon Simmons">
+	<meta name="keywords" content="HTML5, CSS, JavaScript">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<!--the script was loading before the page and not allowing the code to run --> 
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+	<title>Assignment 9 Basic Animations</title>
+	<link rel = "stylesheet" type="text/css" href= "assignment11.css"/>
+	<script src= "javascript/assign11.js"></script>
+</head>
+<body style="background-image: none;">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand" href="#">Web Design by Landon Simmons</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+		  <ul class="navbar-nav ml-auto">
+			<li class="nav-item active">
+			  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				  Assignments
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+				  <a class="dropdown-item" href="assign1.html">Assignment 1</a>
+				  <a class="dropdown-item" href="index_older.html">Assignment 2</a>
+				  <a class="dropdown-item" href="assign3.html">Assignment 3</a>
+				  <a class="dropdown-item" href="assign4.html">Assignment 4</a>
+				  <a class="dropdown-item" href="assign5.html">Assignment 5</a>
+				  <a class="dropdown-item" href="assign6.html">Assignment 6</a>
+				  <a class="dropdown-item" href="assign7.html">Assignment 7</a>
+				  <a class="dropdown-item" href="assign9.html">Assignment 9</a>
+				  <a class="dropdown-item" href="index.html">Assignment 10</a>
+				  <a class="dropdown-item" href="assign11.html">Assignment 11</a>
+				  <a class="dropdown-item" href="assign12.html">Assignment 12 - Under Construction</a>
+				  <a class="dropdown-item" href="assign13.html">Assignment 13 - Under Construction</a>
+				  <a class="dropdown-item" href="assign14.html">Assignment 14 - Under Construction</a>
+				  <a class="dropdown-item" href="assign15.html">Assignment 15 - Under Construction</a>
+				</div>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Programming
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+					<a class="dropdown-item" href="https://www.w3schools.com/">W3 Schools</a>
+					<a class="dropdown-item" href="https://www.w3schools.com/colors/colors_mixer.asp?colorbottom=FFFFF0&colortop=FFFFFF">Color Picker</a>
+					<a class="dropdown-item" href="https://achecker.ca/checker/index.php">Accessibility review</a>
+					<a class="dropdown-item" href="https://validator.w3.org/">Error review</a>
+				</div>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					My Classes
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+					<a class="dropdown-item" href="https://roneaglin.online/cop4813/">Web Programming</a>
+					<a class="dropdown-item" href="https://class.daytonastate.edu/d2l/home/378355">System Integration</a>
+				</div>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="testing/index.html">Portfolio</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="contact.html">Contact</a>
+			</li>	
+		  </ul>
+		</div>
+	  </nav>
+	 <div>
+		<h1>
+			Computer Science Bachelors Embrey Riddle.<br>
+			First and second year Mapped out
+		</h1>
+		<P>Completing one course will unlock other courses. If a course is corequisite the list will automatically close the other class.
+			<br>The courses with labs will automatically be added when selecting a course with a lab attached.
+			<br>Courses that are selectable have all of the pre-requisities filled out.
+		</P>
+		<h3>Year One</h3>
+		<input type="checkbox" id="COM20" onclick="CC();" /> 
+		<label for='COM20'>COM20 Fundementals of Communication</label><br>
+		<input type="checkbox" id="EGR101" onclick="CC();"  /> 
+		<label for='EGR101'>EGR101 Introduction Engineering</label><br/>
+		<input type="checkbox" id="CS223" onclick="CC();"  /> 
+		<label for='CS223'>CS223 Scientific Programming in C</label><br/>
+		<input type="checkbox" id="MA6" onclick="CC();"  />
+		<label for='MA6'>MA6 Intermediate Algebra</label><br/>
+		<input type="checkbox" id="UNIV101" onclick="CC();"  /> 
+		<label for='UNIV101'>UNIV101 College Success</label><br/>
+		<input type="checkbox" id="MA111" onclick="CC();" disabled />
+		<label for='MA111'>MA111 College Mathematics for Avaition I</label><br/>
+		<input type="checkbox" id="MA143" onclick="CC();" disabled />
+		<label for='MA143'>MA143 Precalculus Essentials</label><br/>
+		<input type="checkbox" id="MA241" onclick="CC();" disabled />
+		<label for='MA241'>MA241 Calculus and Analytiucal Geometry I</label><br/>
+		<input type="checkbox" id="MA242" onclick="CC();" disabled /> 
+		<label for='MA242'>MA242 Calculus and Analytical Geometry II</label><br/>
+		<input type="checkbox" id="PS150" onclick="CC();" disabled> 
+		<label for='PS150'>PS150 Physics for Engineers I</label><br/>
+		<input type="checkbox" id="CHM110" onclick="CC();" disabled>
+		<label for='CHM110'>CHM110 General Chemistry I</label><br/>
+		<input type="checkbox" id="CHM110L" onclick="CC();" disabled>
+		<label for='CHM110L'>CHM110L General Chimstry I Lab</label><br/>
+		<input type="checkbox" id="COM122" onclick="CC();" disabled>
+		<label for='COM122'>COM122 English Composition</label><br/>
+		<h3>Year Two</h3>
+		<input type="checkbox" id="CEC220" onclick="CC();" disabled>
+		<label for='CEC220'>CEC220 Digital Circuit Design</label><br/>
+		<input type="checkbox" id="CEC220L" onclick="CC();" disabled>
+		<label for='CEC220L'>CEC220L Digital Circuit Design Lab</label><br/>
+		<input type="checkbox" id="CS222" onclick="CC();" disabled>
+		<label for='CS222'>CS222 Introduction to Discrete Structures</label><br/>
+		<input type="checkbox" id="CS225" onclick="CC();" disabled>
+		<label for='CS225'>CS225 Computer Science II (corequisite with COM219)</label><br/>
+		<input type="checkbox" id="COM219" onclick="CC();" disabled>
+		<label for='COM219'>COM219 Speech (corequisite with CS225)</label><br/>	
+		<input type="checkbox" id="MA412" onclick="CC();" disabled>
+		<label for='MA412'>MA412 Probability and Statitics (corequisite with MA412)</label><br/>
+		<input type="checkbox" id="MA222" onclick="CC();" disabled>
+		<label for='MA222'>MA222 Business Statistics (corequisite with MA222)</label><br/>	
+		<input type="checkbox" id="PS250" onclick="CC();" disabled>
+		<label for='PS250'>PS250 Physics for Engineers (corequisite with CHM140)</label><br/>
+		<input type="checkbox" id="CHM140" onclick="CC();" disabled>
+		<label for='CHM140'>CHM140 Chemistry for Engineeers (corequisite with PS250)</label><br/>	
+		<input type="checkbox" id="PS253L" onclick="CC();" disabled>
+		<label for='PS253L'>PS253L Physics Lab for Engineers (corequisite with PS113L)</label><br/>
+		<input type="checkbox" id="PS113" onclick="CC();" disabled>
+		<label for='PS113'>PS113L Introductory Physics I (corequisite with PS253L)</label><br/>
+		<input type="checkbox" id="SE300" onclick="CC();" disabled>
+		<label for='SE300'>SE300 Software Engineering Practices(with Lab)</label><br/>
+		<input type="checkbox" id="COM221" onclick="CC();" disabled>
+		<label for='COM221'>COM221 Techinical Report Writing</label><br/>
+		<input type="checkbox" id="CS344" onclick="CC();" disabled>
+		<label for='CS344'>CS344 C Programming and UNIX</label><br/>
+		<input type="checkbox" id="CEC320" onclick="CC();" disabled>
+		<label for='CEC320'>CEC320 Microprocessor systems</label><br/>
+		<input type="checkbox" id="CEC322" onclick="CC();" disabled>
+		<label for='CEC322'>CEC322 Microprocessor systems Laboratory</label><br/>
+	 </div> 
+	  
+        
+		
+
+</body>
+</html>
