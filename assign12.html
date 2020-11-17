@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8"/>
-	<meta name="description" content="Assignment 7 Jquery Card Game">
+	<meta name="description" content="Assignment 12 CSM Roundup">
 	<meta name="author" content="Landon Simmons">
 	<meta name="keywords" content="HTML5, CSS, JavaScript">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,10 +12,10 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	<!--the script was loading before the page and not allowing the code to run --> 
 	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-	<title>Assignment 9 Basic Animations</title>
-	<link rel = "stylesheet" type="text/css" href= "css/assignment9.css"/>
+	<title>Assignment 12 CSM Roundup</title>
+	<link rel = "stylesheet" type="text/css" href= "css/assignment12.css"/>
+	<script src= "javascript/assign12.js"></script>
 </head>
 <body style="background-image: none;">
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -42,8 +42,8 @@
 				  <a class="dropdown-item" href="assign7.html">Assignment 7</a>
 				  <a class="dropdown-item" href="assign9.html">Assignment 9</a>
 				  <a class="dropdown-item" href="index.html">Assignment 10</a>
-				  <a class="dropdown-item" href="assign11.html">Assignment 11 - Under Construction</a>
-				  <a class="dropdown-item" href="assign12.html">Assignment 12 - Under Construction</a>
+				  <a class="dropdown-item" href="assign11.html">Assignment 11</a>
+				  <a class="dropdown-item" href="assign12.html">Assignment 12</a>
 				  <a class="dropdown-item" href="assign13.html">Assignment 13 - Under Construction</a>
 				  <a class="dropdown-item" href="assign14.html">Assignment 14 - Under Construction</a>
 				  <a class="dropdown-item" href="assign15.html">Assignment 15 - Under Construction</a>
@@ -78,28 +78,61 @@
 		  </ul>
 		</div>
 	  </nav>
-	  	<br><br>
-        <h1 style="text-align: center;">
-			Keep clicking!
-		</h1>
-		
-        <div class="row">
-			<div class="column">
-				<canvas id="myCanvas" width="600" height="600"></canvas>
-			</div>
-			<div class="column">
-				<h2>
-					Each click generates another effect on the canvas.
-					Each click will reverse the movement of the objects in the canvas.
-					The first click adds a 2nd ball.
-					The 2rd click generates a final ball and every click after that will change the ball radius on the 2nd and 3rd balls.  
-				</h2>
-			</div>	
-			
-            
-            <script src= "javascript/assign9.js"></script>
-        </div>
-		
-
+	 <div>
+		<table>
+		<thead>
+			<tr>
+				<th>System</th>
+				<th>Produced and Sold by</th>
+				<th  >Technology Base</th>
+				<th  >Major Capabilities</th>
+				<th  >Major Limitations</th>
+				<th  >Example Site</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+			<td>Wordpress</td>
+			<td>Automattic Inc.</td>
+			<td>PHP</td>
+			<td>Very easy to setup and run for relativley no cost</td>
+			<td>Requires web design knowledge to solve some work-arounds and certain implementations are simply not feasilbe for the average end user</td>
+			<td><a HREF="https://www.ladybirdeducation.co.uk/">Lady Bird</a></td>
+			</tr>
+			<tr>
+			<td>Wix</td>
+			<td>Avishai Abrahami, Nadav Abrahami and Giora Kaplan</td>
+			<td>PHP</td>
+			<td>Mobile friendly and User Friendly</td>
+			<td>Monthly Fee</td>
+			<td><a href="https://www.wix.com/">Wix</a></td>
+			</tr>
+			<tr>
+			<td>Squarespace</td>
+			<td>Anthony Casalena</td>
+			<td>tomcat, MS SqlServer, Oracle, Isilon</td>
+			<td>A large variety of themes and easy blogging features. Large active support staff available at all hours for questions.</td>
+			<td>If a site is too large square space infastructure can't handle the pages. The pages run slowly and could perform poorly on mobile phones.</td>
+			<td><a href="https://www.squarespace.com/">Square Space</a></td>
+			</tr>
+			<tr>
+			<td>Joomla</td>
+			<td>Open Source Matters</td>
+			<td>PHP</td>
+			<td>Open source! Flexible and able setup with relative ease</td>
+			<td>The average end user will not know enough to run the site effectively. Also the size of the plugin community quite small compared to wordpress.</td>
+			<td><a href="https://www.joomla.org/">Joomla</a></td>
+			</tr>
+			<tr>
+			<td>Shopify</td>
+			<td>Tobi Lutke</td>
+			<td>Ruby on Rails</td>
+			<td>Highly rated by end users for ease of use and functionality. Allows selling to multiple vendors amazon, facebook and ebay.</td>
+			<td>Forces transaction fees for the website</td>
+			<td><a href="https://www.shopify.com/">Shopify</a></td>
+			</tr>
+		</tbody>
+		</table>
+	</div>
 </body>
 </html>
