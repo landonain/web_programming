@@ -1,0 +1,10 @@
+{
+	"name": "Particle thruster",
+	"short_name": "Particle thruster",
+	"description": "",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "any",
+	"background_color": "#ffffff",
+	"icons": []
+}
