@@ -38,3 +38,6 @@ body
 #myCanvas {
 	background-color: lightsteelblue;
 }
+div {
+	padding: 40px;
+}

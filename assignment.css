@@ -45,3 +45,6 @@ body
 	height: 300;
 	border:1px solid black;
 }
+div {
+	padding: 40px;
+}
